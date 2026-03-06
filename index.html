@@ -10,10 +10,10 @@
         <h1>Online Research</h1>
     </header>
     <section>
-        <form action="" method="get">
-            <fieldset>
+        <form action="" method="get">            
+            <!-- <fieldset>
                 <legend>Personal Data</legend>
-                <!--DADOS PESSOAIS-->
+                DADOS PESSOAIS
                 <label for="userName">Name:</label>
                 <input type="text" name="userName" required>
                 <br>
@@ -32,8 +32,64 @@
                 <label for="userImage"> Upload of image: </label>
                 <input type="file" accept="image/*" name="userPhoto" required>
                 <br>
+            </fieldset> -->
+            <fieldset>
+                <legend>Profile</legend>
+                <p>Sex:</p>
+
+                <input type="radio" name="userGender" value="Female">
+                <label for="userGender">Female</label>
+                <input type="radio" name="userGender" value="Male">
+                <label for="userGender">Male</label>
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Not Informed</label>
+                <br>
+
+                <label for="maritalStatus">Marital Status</label>
+                <select name="maritalStatus" id="">
+                <option value="notInformed">Selection...</option>
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+                <option value="divorced">Divorced</option>
+                <option value="married">Registered Partnership</option>
+                <option value="widowed">Widowed</option>
+                </select>
+
+                <label for="userCity">City</label>
+                <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
+
+                <label for="userState">State</label>
+                    <select name="userState" required>
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="distritoFederal">Distrito Federal</option> 
+                    <option value="espiritoSanto">Espirito Santo</option> 
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="matoGrossoDoSul">Mato Grosso do Sul</option> 
+                    <option value="matoGrosso">Mato Grosso</option> 
+                    <option value="minasGerais">Minas Gerais</option> 
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="rioDeJaneiro">Rio de Janeiro</option> 
+                    <option value="rioGrandeDoNorte">Rio Grande do Norte</option> 
+                    <option value="rioGrandeDoSul">Rio Grande do Sul</option> 
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santaCatarina">Santa Catarina</option> 
+                    <option value="saoPaulo">São Paulo</option> 
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select>
+
             </fieldset>
-            
 
             <button type="submit">Enviar</button>
         </form>
